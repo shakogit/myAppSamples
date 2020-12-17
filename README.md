@@ -1,2 +1,2 @@
-#myApp
-this is my test file.
+#myApp::
+simple test file.

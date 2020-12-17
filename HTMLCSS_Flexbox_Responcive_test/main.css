@@ -1,0 +1,375 @@
+/* ---------| SECTION 1 |---------*/
+
+*
+{
+   box-sizing: border-box;
+
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: BPG Nino Elite;
+    
+}
+
+.container
+{
+    max-width: 1195px;
+    margin: 0 auto;
+    /*border: 1px solid #222;*/
+    
+}
+
+header
+{
+    background: #999;
+    padding: 55px 0;
+}
+
+header .menu
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+header .menu a
+{
+    width: 220px;
+    background: #555;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0 3px 10px -3px #111;
+}
+
+header .menu a:hover
+{
+    box-shadow: none;
+    background: #777;
+}
+
+
+/*---------|  SECTION 2 |---------*/
+
+main
+{
+    background-color:cadetblue;
+    padding: 55px 0 80px;
+}
+
+.tech 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.tech img
+{
+    width: 360px;
+    height: 200px;
+}
+
+.tech .arrow
+{
+    width: 41px;
+    height: 22px;
+}
+
+.gallery
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery img
+{
+    width: 360px;
+    height: 230px;
+    margin-bottom: 35px;
+}
+
+.news aside
+{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.news aside img
+{
+    width: 340px;
+    height: 225px;
+    margin-right: 55px;
+}
+
+.news aside .description
+{
+    color: darkblue;
+    font-size: 19px;
+    width: 760px;
+}
+
+.news aside:nth-child(even) img
+{
+    order: 1;
+    margin-right: 0px;
+    margin-left: 55px;
+}
+
+.cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cards .card
+{
+    width: 400px;
+    height: 425px;
+    background: #555;
+    color: #fff;
+    box-shadow: 0 0 10px -1px #000;
+    font-size: 18.5px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.cards .card h3
+{
+    background: #333;
+    margin: 0;
+    padding: 25px 0 20px;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.cards .card .descrition
+{
+    padding: 20px 40px 0 40px;
+    
+}
+
+.cards .card .descrition p
+{
+    margin: 0;
+    line-height: 1.5;
+    font-size: 19px;
+}
+
+.cards .card .btn
+{
+    width: 260px;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    background: darkorange;
+    border: none;
+    display: block;
+    margin: auto auto 0;
+    border-radius: 8px;
+    padding: 14px 0;
+    box-shadow: 0 0 10px -1px #000;
+    margin: auto;
+}
+
+
+/* ---------| SECTION 3 |----------*/
+
+.gallery img
+{
+    flex-grow: 1;
+    height: auto;
+}
+
+
+.news aside img
+{
+    flex-shrink: 1;
+}
+
+.news aside .description
+{
+    flex-shrink: 2;
+    width: 100%;    
+}
+
+
+footer 
+{
+
+    background: #777;    
+    font-size: 21px;
+    color: #fff;
+    text-align: center;
+    padding: 110px 0 105px;
+    
+}
+footer p
+{
+    margin: 0;
+    
+}
+
+
+/* ---------| SECTION 4 |--------*/
+
+@media (max-width: 991px)
+{
+    .cards .card
+    {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .tech
+    {
+        flex-direction: column;
+    }
+    .tech img
+    {
+        max-width: 620px;
+        width: 100%;
+        height: auto;
+        max-height: 315px;
+        margin-bottom: 50px;
+    
+    }
+    .tech .arrow
+    {
+        display: none;
+    }
+    
+    .gallery img
+    {
+        flex-grow: 1;
+        height: auto;
+    }
+    
+    .news aside img
+    {
+        flex-shrink: 1;
+    }
+    
+    .news aside .description
+    {
+        flex-shrink: 2px;
+         width: 100%;   
+    }
+}
+
+@media (max-width: 768px)
+{
+    header .menu
+    {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    header .menu a
+    {
+        width: 90%;
+        margin-bottom: 35px;
+        font-size: 35px;
+        
+    }
+    main
+    {
+        padding-top: 30px;
+    }
+    
+    .news aside
+    {
+        flex-direction: column;
+        margin-left: 10px;
+        width: 95%;
+        align-items: center;
+        padding: 50px 40px;
+        margin: 0 24px 40px:
+    }    
+    
+    .news aside img
+    {
+        width: 100%;
+        height: auto;
+        max-height: 350px;
+        margin-right: 0;
+    }
+    
+    .news aside .description
+    {
+        font-size: 25px;
+    }
+    
+    .news aside:nth-child(even) img
+    {
+        order: 0;
+        margin-left: 0;
+    }
+    
+    .cards
+    {
+        
+    }
+    
+    .cards .card
+    {
+        
+        max-width: 625px;
+        width: 95%;
+        min-height: 665px;
+    }
+    
+    .cards .card h3
+    {
+        font-size: 40px;
+    }
+    
+    .cards .card .description
+    {
+        
+    }
+    
+    .cards .card .descrition p
+    {
+        font-size: 29px;
+        line-height: 1.3;
+    }
+    
+    .cards .card .btn
+    {
+        font-size: 30px;
+        width: 351px;
+    }
+    
+    footer
+    {
+        padding: 55px 0 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
